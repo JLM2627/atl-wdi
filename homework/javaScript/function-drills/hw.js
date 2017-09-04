@@ -1,4 +1,4 @@
-// General Assembly, WDI (Web Development Immersive) Remote, Cohort 02 (R2D2)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        // General Assembly, WDI (Web Development Immersive) Remote, Cohort 02 (R2D2)
 // Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
 // See LICENSE for details.
 "use strict";
@@ -11,7 +11,9 @@
 // Output: the sum of the numbers that were passed in
 // Edge Case: If the array is empty, return 0
 var sumOfNums = function(numsArray){
-  // Your Code Here
+  if (var i = 0; i < numsArray.length; i++){
+    sum += numsArray[i];
+  }
 };
 
 // #2

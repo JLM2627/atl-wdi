@@ -14,6 +14,7 @@ var sumOfNums = function(numsArray){
   if (var i = 0; i < numsArray.length; i++){
     sum += numsArray[i];
   }
+  return sum;
 };
 
 // #2
@@ -22,9 +23,9 @@ var sumOfNums = function(numsArray){
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
    if (var i = 0; i > numsArray.length;   ){
-     
+
    }
-  // Your Code Here
+ return numsGreaterThanTen;
 };
 
 // #3

@@ -119,6 +119,50 @@ Chapter 5
 17. 
 18. alert(6 + 6);
 19. 
+
+
+Chapter 6. 
+1. x++;
+2. x--;
+3. 50
+4. 49
+5. var newNum = num++;
+6. var newNum = ++num;
+7. var newNum = --num;
+8. x--;
+9. x = x + 1;
+10. var newNum = --num;
+11. var newNum = num++;
+12. num++;
+alert(num);
+13. x++;
+14. x--;
+15. x = x + 1;
+16. var newNum = --num;
+17. var newNum = num++;
+18. num++;
+alert(num);
+19. var num = 10;
+num++;
+alert(num);
+20. var num = 10;
+var newNum = ++num;
+alert(newNum);
+ 
+
+ 
+
+
+ 
+                             
+
+ 
+
+ 
+
+
+ 
+                             
 # W3C Accessibility Guidelines (extra credit)
 
 #### Read through this article:

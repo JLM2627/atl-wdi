@@ -52,21 +52,49 @@ entities/abstractions (e.g. Laptop, above) that the app might use, and giving
 them each several properties that make sense for that use case.
 Please also give a short explanation (1 - 2 sentences) of why these choices make
 sense for the use case of the app.
-
+ 
 ### 1. To-Do List
+let task {
+  title: groceries;
+  start: 5:45 pm;
+  end: 6:45 pm;
+  duration: 1 hour;
+  directions: 'do this';
+  completionStatus: complete/incomplete;
+}
+let project {
+  stepsOfCompletion: ['decide to grocery shop', 'gather notepad and pen', 'look in fridge', 'make list', 'get in car', 'go to store', 'grt buggy', follow list directions', 'get in checkout line', 'pay for items', 'get back in car', 'return home']
+  dateStarted : today;
+  dateEnded: today;
+}
+
+\
 
 This app will be an app for tracking and managing tasks. Not only will it keep
 track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+I decided the most important part that makes up a 'task' is a title, knowing what you are doing. The task starts with a title, time of start and time of finish, along with completion status. The projects are arranged by type, start day and finish.
 
 ### 2. Photo Sharing App
 
+  
+
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+>const photo = {
+  user: navgate to app. enter credentials;
+  picUpload: select and upload picture or pictures;
+  createAlbum: based on pictures, create album name;
+  hostUrl: where to grab the pic from for uploading;
+}
+
+const albums = {
+  groups: combined pictures;
+  
+}
+Users will navigate to the app and enter credentials. Pictures will have to be uploaded and sorted based on user choice. Albums are composed of combined pictures from user selection 
 
 ### 3. Home Automation Manager
 
@@ -75,16 +103,40 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
-
+const house {
+  time: time of day/night;
+  temp: above or below 72;
+  light: on or off;
+}
+const system {
+  airSystem: on or off;
+  lightSensor: on or off;
+  sensor: initiatied or not;
+}
+ 
+ the system will be made up of the sensor which controls the airSystem and if it should be on or off. The light sensor and another sensor that initializes the system to kick on. The house needs the time of day, temp and lights to be used in the system.
 ### 4. Sneaker Store
 
 This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+const products {
+  name: airMax;
+  description: shoes;
+  priceTotal: $100;
 
+}
+
+const shoppingCart {
+  orderDetails: complete or not;
+  dateCompleted: completion date;
+  itemsPaid: 8/31/17
+}
+const order {
+  itemsShipped: paid;
+}
+The shoes to be sold are made up of a name, description and type. Once it is chosen, the order will be completed and then shipped if the item has been paid for.
 ## Representing Abstractions in Code
 
 Once you've chosen the abstractions that your app will use, the next step is to
@@ -139,7 +191,8 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+One disadvantage is that the app is supposed to tell the rider how many stops to get from one place to the other. There are no keys I see that represent time or distance. It seems that they have limited themselves. The advantage that I have found is that the desriptions of the objects are very detail oriented.
+
 
 ### 6. Doctor Appointment App
 
@@ -242,7 +295,7 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+> The first set of JS doesnt read very well and appears messy. The second code has a clener composition
 
 ## Tying It Together
 
@@ -253,13 +306,33 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+  var examplePlayer = {
+   username: jaymemarshall;
+   movesFirst: player x;
+   movesSecond: player o;
+   
+ }
+
+ var game = {
+   xplayer: make move first;
+   oPlayer: make move second;
+   movesMade: 
+ }
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+  var examplePlayer = {
+   username: jaymemarshall
+   avatarUrl: location of hosted image;
+ }
+
+ var game = {
+   xplayer: moves first;
+   oPlayer: moves second;
+   movesMade: recorded moves;
+ }
 
 c.  Justify your choices in a) and b). Why these entities? Why these
-    representations?
+    representations.
 
-  > Answer here
+    The game is made of a two players, x and o. The examplePlayer object establishes which player moves first and which goes second. var game tells the players to move in order and then records moves in movesMase

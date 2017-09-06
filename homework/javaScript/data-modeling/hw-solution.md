@@ -409,7 +409,7 @@ the better choice?
 You've been tasked with building an in-browser tic-tac-toe game.
 
 a.  What are some possible entities that your application might use to model its
-    data? Please pick at least two, with at least two properties apiece.
+    data? Please pick at least two, with at least two properties apiece. A and B
 
   > A Player has...
   > -   a username
@@ -425,6 +425,16 @@ a.  What are some possible entities that your application might use to model its
   > -   a position (perhaps a number from 0 - 8, representing each cell)
 
 b.  How might those entities be represented in JavaScript code?
+ var examplePlayer = {
+   username: jaymemarshall
+   avatarUrl: location of hosted image;
+ }
+
+ var game = {
+   xplayer: moves first;
+   oPlayer: moves second;
+   movesMade: 
+ }
 
   > Here is one possible representation.
 

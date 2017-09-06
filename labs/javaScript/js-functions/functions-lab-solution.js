@@ -60,7 +60,7 @@ var numberOfArguments = function(){
 
 // Question 6
 var reverseString = function (str){
-  var arr = str.split('');
+  var arr =str.split('');
   var revArr = [];
   for (var i = arr.length - 1; i >= 0; i--) {
     revArr.push(arr[i]);

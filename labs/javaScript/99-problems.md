@@ -40,7 +40,10 @@ Write another for loop that iterates over the directors array but also adds the 
 ```
 => "Hi, Michelangelo Antonioni"
 => "Hi, David Lynch"
-```
+
+directors.forEach(function(name) {
+console.log(“Hi, ” + name)
+});
 
 ## 5
 
@@ -53,6 +56,12 @@ console.log(isCool("Thom"));
 
 => "Thom is super cool";
 ```
+
+let my_array = [‘skylar’, ‘thom’];
+
+my_array.forEach(function(fuck) {
+  console.log(fuck + ” is super cool”);
+});
 
 ## 6
 

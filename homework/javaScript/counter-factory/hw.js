@@ -48,16 +48,33 @@ const CounterCollection = {
 // UI //
 const Presenter = {
   insertCounterComponent: function(newCountId){
-    console.log(`insert counter component #${newCountId}`);
-    // Your Code Here
+    console.log(`insert counter component #${newCountId}`);// code given 
+    let newCounter = document.createElement('div')// establishing var "newCounter" and creating div element of HTML in Javascript
+    newCounter.innerHTML =<div class='counter' data-index='2'><h3>Count: <span>0</span></h3><button class='increment'> + 1 </button></div>// HTML code inserted
+  // newCounterComponent.class = 'counter'// pulled from the class component. As the button is clickes, a new counter component will be created
+  newCounterComponent.dataSet.counterId += // I have to reference the data index using dataSet and counterId. README stated that += adds an incrememt
+  // listed below are more attempts to call and reference the button. Two hours spent, I have to put my computer away
+  
+  // var button = document.createElement("button");
+  // button. innerHTML = "Do Something";
+  //counter +=<button onclick="counter++">Increment</button>
   },
+  //// 1. Create the button.
+//var button = document. createElement("button");
+////button. innerHTML = "Do Something";
+// 2. Append somewhere.
+//var body = document. getElementsByTagName("body")[0];
+//body. appendChild(button);
+// 3. Add event handler.
+
+
   refreshCounterComponent: function(countId){
     console.log(`refresh counter component #${countId}`);
     // Your Code Here
   },
   removeCounterComponent: function(countId){             // REACH
     console.log(`remove counter component #${countId}`);
-    // Your Code Here
+    // Your Co
   }
 };
 

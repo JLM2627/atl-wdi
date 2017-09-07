@@ -2,20 +2,21 @@
 
 window.onload = function() {
 
-const ButtonOne = Document.querySelector(".ButtonOne")
-ButtonOne.addeventListener("click", function() {
+const ButtonOne = document.querySelector(".ButtonOne")
+ButtonOne.addEventListener("click", function(){
     alert("You have clicked button one")
 });
 
-const ButtonTwo = Document.querySelector("ButtonTwo")
-ButtonTwo.addeventListener("click", function(){
-    const paragraph = document.getElement("information");
+const ButtonTwo = document.querySelector(".ButtonTwo")
+ButtonTwo.addEventListener("click", function(){
+    const paragraph = document.getElementById("information");
     paragraph.innerText = "A click event is essentially tying a function (as a callback) to an element and specifying what action needs to happen to trigger or call/invoke that function (callback)."
 
 });
-  const ButtonThree = Document.querySelector("ButtonThree")
-  ButtonThree.addeventListener("click", function() {
-    const remove = document.getElementByClass("Information");
-    element.parentNode.removeChild("p");
-});
+//
+  const ButtonThree = document.querySelector(".ButtonThree")
+  ButtonThree.addEventListener("click", function() {
+   document.getElementsByTagName("div")[1].innerHTML = "";
 
+});
+}

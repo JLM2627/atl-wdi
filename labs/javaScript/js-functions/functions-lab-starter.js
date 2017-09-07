@@ -3,32 +3,65 @@ function maxOfTwoNumbers() {
 
 }
 
-// Question 2
-function maxOfThree() {
+function maxOfTwoNumber(x, y) {
+    if (x > y) {
+      return y;
+    }
+    else {
+      return x;
+    }
+  }
+  maxOfTwoNumber(2, 4)
 
-}
+// Question 2
+function maxOfThree(x, y, z) {
+    if (x > y && x > z) {
+      return x;
+    }
+    else {
+  }
+    return z;
+  }
+  
+  maxOfThree(3, 5, 8)
 
 // Question 3
-function isCharacterAVowel() {
-
-}
+function isCharacterAVowel(char) {
+    if (char === "a" || "i" || "e" || "o" || "u")
+     return true; {
+      
+   
+   
+   
+   isCharacterAVowel("h");
 
 // Question 4
-function sumArray() {
- 
+var b = [1, 2, 3, 4];
+function sumArray(b) {
+  var c = 0;
+  for(i = 0; i < b.length; i++){
+    c += b[i];
+  }
+    return c;
 }
 
 
-// Question 4
-function multiplyArray() {
-
+var b = [1, 2, 3, 4];
+function sumArray(b) {
+  var c = 1;
+  for(i = 0; i < b.length; i++){
+    c *= b[i];
+  }
+    return c;
 }
+sumArray(b)
 
 
 // Question 5
 var numberOfArguments = function(){
-  
-}
+    return args.length
+    
+  }
 
 
 

@@ -14,9 +14,9 @@ ButtonTwo.addEventListener("click", function(){
 
 });
 //
-  const ButtonThree = document.querySelector(".ButtonThree")
-  ButtonThree.addEventListener("click", function() {
-   document.getElementsByTagName("div")[1].innerHTML = "";
+const ButtonThree = document.querySelector(".ButtonThree")
+ButtonThree.addEventListener("click", function() {
+document.getElementsByTagName("div")[1].innerHTML = "";
 
 });
 }

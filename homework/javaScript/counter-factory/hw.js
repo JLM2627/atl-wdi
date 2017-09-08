@@ -59,7 +59,7 @@ const Presenter = {
   // button. innerHTML = "Do Something";
   //counter +=<button onclick="counter++">Increment</button>
   },
-  //// 1. Create the button.
+  // 1. Create the button.
 //var button = document. createElement("button");
 ////button. innerHTML = "Do Something";
 // 2. Append somewhere.

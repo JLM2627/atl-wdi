@@ -4,11 +4,20 @@
 "use strict";
 /// DO NOT EDIT ABOVE THIS LINE ///
 
-var makeChange = function(price, payment) {
-  // Your Code Here
-};
+  var makeChange = function(price, payment) {
+    diffChangeArray = [q, d, n, p];
+    const itemPrice = price;
+    const paymentGiven = payment;
+    const changeAmount = 
+    if(paymentGiven > itemPrice) 
+      return (makeChange * 100).Math.round
+      
+  } else if()
+
+
+
 
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
   makeChange: makeChange
-};
+

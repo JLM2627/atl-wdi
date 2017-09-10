@@ -10,7 +10,7 @@ const Stopwatch = {
       Stopwatch.advanceTenMillisecs();
       AppController.handleClockTick();
     }
-  },
+  },op
   isRunning: false,
   mins: 0,
   secs: 0,
@@ -24,10 +24,14 @@ const Stopwatch = {
     // Your Code Here
   },
   start: function(){
-    // Your Code Here
+    if(stopWatch.isNotRunning){
+      stopWatch.isNotRunnng = true;
+      stopWatch.tickClock();
+
+    }
   },
   stop: function(){
-    // Your Code Here
+    Stopwatch.isRunning = false;
   },
   lap: function(){
     // Your Code Here

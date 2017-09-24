@@ -9,9 +9,9 @@ class Tamagotchi {
     }
 
     cry(){
-        this.foodIntummy -1;
+        this.foodInTummy--;
         console.log('WaHHHHHHH');
-        console.log('Oh my! Amount of food in belly:'  + this.foodInTummy)
+        console.log('Oh my! Amount of food in belly:'  + this.foodInTummy--);
     }
 }
 

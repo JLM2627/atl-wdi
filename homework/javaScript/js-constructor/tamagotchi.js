@@ -11,17 +11,20 @@ class Tamagotchi {
     cry(){
         this.foodIntummy -1;
         console.log('WaHHHHHHH');
-        console.log('Oh my! Amount of food in belly:' this.foodInTummy)
+        console.log('Oh my! Amount of food in belly:'  + this.foodInTummy)
     }
 }
 
 
 
 //create new Tamagotchis
-let tamTam1 = newTamgotchi();
-let tamTam2 = newTamgotchi();
+let tamTam1 = new Tamagotchi();
+let tamTam2 = new Tamagotchi();
 
 
 //test out your Tamagotchies below via console.logs
-console.log(tamtam1);
+console.log(tamTam1);
 console.log(tamTam2);
+
+tamTam1.cry();
+tamTam2.cry();

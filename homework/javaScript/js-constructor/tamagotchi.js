@@ -14,6 +14,16 @@ class Tamagotchi {
         this.foodInTummy--;
         console.log('WaHHHHHHH');
         console.log('Oh my! Amount of food in belly:'  + this.foodInTummy--);
+    };
+
+    puke(){
+        this.foodInTummy--;
+        console.log('tears tears tears!!!! This baby is SICK! There is now:' + this.foodInTummy-- + 'in its belly!');
+
+    };
+    yawn() {
+        this.rested--;
+        console.log(this.name + " is a very tired Tamagotch. There is only " + this.rested-- + ' in its reserves.');
     }
 }
 
@@ -31,4 +41,12 @@ console.log(tamTam2);
 tamTam1.cry();
 tamTam2.cry();
 
+tamTam1.puke();
+tamTam2.puke();
+
+tamTam1.yawn();
+tamTam2.yawn();
+
 //console.log(tamTam1.cry());
+
+let Tasha = new Tamagotchi('Tasha', 'Worlick Tamagotchi Creature')

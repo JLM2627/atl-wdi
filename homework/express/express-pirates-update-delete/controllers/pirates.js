@@ -44,8 +44,8 @@ router.get('/:id', function(req, res){
 router.put('/:id', function(req, res) {  
 	var  = data.seededTodos[req.params.id]; 
 	
-	todoToEdit.description = req.body.description; 
-	 todoToEdit.urgent = req.body.urgent;  
+	showPirateToEdit.description = req.body.description; 
+	 showPirateToEdit.urgent = req.body.urgent;  
 	 res.redirect('/pirates');})
 //==============================
 // DESTROY

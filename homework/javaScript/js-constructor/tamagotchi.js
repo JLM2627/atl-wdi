@@ -25,6 +25,10 @@ class Tamagotchi {
         this.rested--;
         console.log(this.name + " is a very tired Tamagotch. There is only " + this.rested-- + ' in its reserves.');
     }
+
+    begin() {
+        this.name
+    }
 }
 
 

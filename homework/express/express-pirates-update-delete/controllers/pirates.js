@@ -41,11 +41,22 @@ router.get('/:id', function(req, res){
 //==============================
 // UPDATE
 //==============================
-
+router.put('/:id', function(req, res) {  
+	var  = data.seededTodos[req.params.id]; 
+	
+	todoToEdit.description = req.body.description; 
+	 todoToEdit.urgent = req.body.urgent;  
+	 res.redirect('/pirates');})
 //==============================
 // DESTROY
-//==============================
+/*DELETE */
+router.delete('/:id', function (req, res) {
+	data.pirates.splice(req.params.id, 1);
+  
+	res.redirect('pirates/index.hbs');
+  });
 
+ 
 //==============================
 // EXPORTS
 //==============================

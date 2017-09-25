@@ -1,0 +1,14 @@
+var radio = {
+    stationLocation:"number",
+    songsPlayed: "string",
+    Genre: "string",
+    popularityOfSongs: "number"
+
+}
+
+
+var exampleRadio {
+    stationLocation: 105.7,
+    songsPlayed: "Todays top hits!",
+    genre: "funky monkey"
+}

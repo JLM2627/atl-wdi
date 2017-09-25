@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const pirates = require('../models/pirates.js');
 
-//all routes for pirat */
+//all routes for pirate */
 
 /*INDEX*/
 

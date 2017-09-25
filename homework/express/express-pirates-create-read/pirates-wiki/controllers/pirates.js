@@ -8,21 +8,37 @@ const pirates = require('../models/pirates.js');
 /*INDEX*/
 
 router.get('/', (req, res) => {
-    router.post();
+    res.render('pirates/index', {
+        pirates: data
+    });
 })
 /* new */
 router.get('/new', (req, res ) => {
-    router.post();
+    let newPirate = req.body;
+    data.push(newPirate);
+    res.redirect('/pirates');
+    //router.post();
 })
 
 /*ShOw*/
 router.get('/:id', (req, res) => {
-    router. post();
+    let id = req.params.id;
+    const pirates = data[id]
+    if(!pirates){
+        res.render('pirates/show',{
+            error: "Wrong WAY!"
+        })
+    } else {
+        res.render('pirates/show', {
+            pirates: pirates
+        })
+    }
+    //router. post();
 })
 
 /* create */
-router.post('/', (req, res) => {
-    
+router.post('/new', (req, res) => {
+    res.render('/pirates/new')
 })
 
 

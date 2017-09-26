@@ -60,7 +60,7 @@ db.once('open', function (){
 
 const port = 3000;
 app.listen(port, () =>{
-    console.log('server is hot ${port}');
+    console.log(`server is hot ${port}`);
 })
 
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000

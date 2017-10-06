@@ -10,7 +10,8 @@ var methodOverride = require("method-override");
 var hbs = require("hbs");
 var logger = require('morgan');
 
-mongoose.connect('mongodb://localhost/donut_store')
+
+mongoose.connect('mongodb://localhost/donut_store');
 
 //const router = express.Router();
 

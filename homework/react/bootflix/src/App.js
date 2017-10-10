@@ -13,11 +13,11 @@ class App extends Component {
   }
 
   //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
-  _searchByTitle = () => {
+  searchByTitle = () => {
     console.log("Search by Title");
   }
 
-  _searchById = () => {
+  searchById = () => {
     console.log("Search by ID");
   }
 

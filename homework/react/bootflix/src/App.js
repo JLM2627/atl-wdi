@@ -12,6 +12,7 @@ class App extends Component {
       title: '',
       year: '',
       director: '',
+      genre: '',
       plot: ''
       
     }
@@ -19,7 +20,7 @@ class App extends Component {
 
 
 
-  _searchBytitle =(event) =>{
+  _searchByTitle =(event) =>{
     event.preventDefault()
     console.log('this is searchByTitle')
     const title = event.target.title.value
@@ -100,7 +101,7 @@ class App extends Component {
   render() {
     console.log(this.state.title)
     console.log(this.state.year)
-    
+
     return (
       <div className="App">
         <Header />

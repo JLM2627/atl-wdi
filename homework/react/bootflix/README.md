@@ -28,6 +28,8 @@ Hi! I wanted to let you know that I've created our beta page and you'll be worki
 
 ### Notes
 
+- Helped by James Peterson from WDI12 to understand and complete
+
 - Jane has created a few components for you already.  You will not need to make any additional components.
 - You will be using **omdb** (http://www.omdbapi.com/) to search for movies by title and/or ID.
 - A sample result object has been provided for reference in `omdbExample.json`. This shows you what to expect as a result from your `axios` calls.

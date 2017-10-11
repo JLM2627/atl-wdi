@@ -6,18 +6,69 @@ import Movie from './components/Movie';
 import example from './omdbExample.json'
 
 class App extends Component {
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     this.state = {
-      movie: []
+      title: '',
+      year: '',
+      director: '',
+      plot: ''
       
-    };
+    }
   } 
+
+
+
+  _searchBytitle =(event) =>{
+    event.preventDefault()
+    console.log('this is searchByTitle')
+    const title = event.target.title.value
+    axios.get(`http://www.omdbapi.com/apikey=d31f1a94&t=${title}`, {
+    }) .then((response)=>{
+      console.log(response)
+        this.setState ({
+          title: response.data.title,
+         year: response.data.year,
+         director: response.data.director,
+          genre: response.data.genre,
+          plot: response.data.plot
+      })
+    }).catch((error)=>{
+      console.log(error)
+    })
+
+  }
+  _searchById = (event) => {
+    event.preventDefault()
+   const id = event.target.id.value
+    axios.get(`http://www.omdbapi.com/?apikey=d31f1a94&i=${id}`, {
+   }).then((response) => {
+         console.log(response)
+           this.setState({ 
+             id: response.data.imdbID,
+             title: response.data.Title,
+             year: response.data.Year, 
+             director: response.data.Director,
+             genre: response.data.Genre,
+             plot: response.data.plot
+           })
+       }).catch((error) => {
+           console.log(error)
+       })
+     
+   }
+
+
+
+
+
+
+
  /*  componentWillMount() {
     axios.get("http://www.omdbapi.com/apikey") 
   } */
   //Update these methods to make axios calls to OMDB and update this.state.movie with the response from the server
-  searchByTitle = () => {
+ /*  _searchByTitle = () => {
       axios.get('http://www.omdbapi.com/?apikey=[yourkey]&t=[title]', {
           params: {
             apikey: "",
@@ -34,7 +85,7 @@ class App extends Component {
             console.log("error", error);
           });
       
-    } 
+    }  */
       
         
   
@@ -47,14 +98,16 @@ class App extends Component {
 
   //Pass _searchByTitle, _searchById, and this.state.movie to it's appropriate child components.
   render() {
-    const movie = rthis.state.movies.map(())
+    console.log(this.state.title)
+    console.log(this.state.year)
+    
     return (
       <div className="App">
         <Header />
-        <Search />
-        <Movie />
+        <Search searchByTitle={this._searchByTitle} searchById={this._searchById}/>
+        <Movie id={this.state.id} title={this.state.title} year={this.state.year} director={this.state.director} genre={this.state.genre} plot={this.state.plot}/>
       </div>
-    )
+    );
   }
   
 }

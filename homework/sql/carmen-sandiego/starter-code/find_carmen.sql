@@ -21,3 +21,14 @@ San Marino
 SELECT name FROM city WHERE countrycode = 'SMR';
 Serravalle
  San Marino
+
+ 6.
+SELECT name FROM country WHERE code = 'BRA';
+Brazil
+
+7. 
+SELECT name FROM city WHERE id = '211';
+
+8.
+SELECT name, district, countrycode FROM city WHERE population = 91084;
+Santa Monica, California!!!!
